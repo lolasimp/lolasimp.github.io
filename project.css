@@ -1,0 +1,27 @@
+
+
+a:hover{
+    color: blue;
+    background-color: yellow;
+    text-transform: 5px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+footer {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    padding-top: 800px;
+}

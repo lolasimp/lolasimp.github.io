@@ -1,0 +1,59 @@
+
+* {
+    padding: 0;
+    margin:0;
+}
+header {
+    width: 477px;
+    padding-left: 307px;
+    padding-top: 90px;
+}
+
+body{
+background-image: url("IMG_1061.jpg");
+}
+
+
+
+#name-title{
+    color: #7360d0bf;
+}
+
+h2 {
+    color: #7360d0bf; 
+}
+
+.bio-image {
+    width: 255px;
+    border-radius: 90%;
+}
+div {
+    font-size: 17px;
+    color: white;
+}
+a:hover{
+    color: blue;
+    background-color: yellow;
+    text-transform: 5px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+li {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+footer {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    padding-top: 800px;
+}
