@@ -1,0 +1,30 @@
+a:hover{
+    color: blue;
+    background-color: yellow;
+    text-transform: 5px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.side-nav li a:not(.button) {
+    display: block;
+    color: #f07125;
+    margin: 0;
+    padding: .21875rem .4375rem;
+
+footer {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
