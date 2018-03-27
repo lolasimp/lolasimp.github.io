@@ -12,7 +12,12 @@ var blogs = [
     {
         id:"It's Getting Interesting!",
         date: "3/12/2018",
-        entry: "I'm feeling much better this week. I feel that I'm getting a better understanding of what is going on. Now its just me thinking more logically in my for loops. The fact that this blog is due 13 says alot."
+        entry: "I'm feeling much better this week. I feel that I'm getting a better understanding of what is going on. Now its just me thinking more logically in my for loops. This is truly my only problem. I will look a bit more at functions and for loops to get a better understanding."
+    },
+    {
+        id: "Moving from VAR to LET and CONST",
+        date: "3/27/2018",
+        entry: "I definitely hate the feeling of uncertainty. When introduced at first glance you wonder why we didnt learn this way in the beginning. I do understand why we learn 'Vanilla' JavaScript, but it still sucks. Anywho, I can grasps the meaning when creating a for loop but I still don't grasp all the elements needed toadd in the for loop to produce the answer I want. I'm working on this concept one day at a time. Once I discover I need to add a 'forEach' or a 'join()/split()' I feel like I just need to learn more rules for things to work in the ways the should. In our last group project I chose to work on the page needing loops because I wanted to better my understanding. I feel like Im taking the neccessary steps needed to better my understanding but sometimes I feel lost."
     }
 ];
 
