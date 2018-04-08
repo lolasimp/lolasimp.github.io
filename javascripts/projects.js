@@ -1,70 +1,37 @@
-var projects = [
-    {
-        title: "Project 1",
-        dates: "00/00/00",
-        photo: "http://placeimg.com/640/480/any",
-        info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        title: "Project 2",
-        dates: "00/00/00",
-        photo: "http://placeimg.com/640/480/any",
-        info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        title: "Project 3",
-        dates: "00/00/00",
-        photo: "http://placeimg.com/640/480/any",
-        info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        title: "Project 4",
-        dates: "00/00/00",
-        photo: "http://placeimg.com/640/480/any",
-        info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        title: "Project 5",
-        dates: "00/00/00",
-        photo: "http://placeimg.com/640/480/any",
-        info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        title: "Project 6",
-        dates: "00/00/00",
-        photo: "http://placeimg.com/640/480/any",
-        info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+const printToDom = (domString, divId) => {
+    document.getElementById(divId).innerHTML += domString;
     }
-  
-];
-
-console.log(projects)
 
 
-function printToDom (stringToPrint, divId){
-    var thingToPrint = document.getElementById(divId);
-    if(thingToPrint){
-        thingToPrint.innerHTML += stringToPrint;
+const linkprojects = (projects) => {
+    let domString = "";
+    for(let i=0; i<projects.length; i++){
+     domString += `<div class = "projects">`;
+     domString += `<h2>${projects[i].title}</h2>`;
+     domString += `<h4>${projects[i].date}</h4>`;
+     domString += `<img id ="photo" src= "${projects[i].photo}">`;
+     domString += `<p>${projects[i].info}<p>`
+     domString += `</div>`;
     }
+       printToDom(domString, "projects-main-container");
 };
 
 
-function linkProjects (projectsArray){
-    for (var i = 0; i < projectsArray.length; i++){    
-    var projectTitle = projectsArray[i].title;
-    var projectDates = projectsArray[i].dates;
-    var projectPhoto = projectsArray[i].photo;
-    var projectInfo = projectsArray[i].info;
-    var projectString = "";
-     projectString += '<div class = "projects">';
-     projectString += '<h2>' + projectTitle + '</h2>';
-     projectString += '<h4>' + projectDates + '</h4>';
-     projectString += `<img id ="photo" src= "${projectPhoto}">`
-     projectString += '<p>' + projectInfo + '<p>';
-     projectString += '</div>';
+function loadprojects() {
+    const data = JSON.parse(this.responseText);
+    linkprojects(data.projects);
+};
 
-       printToDom(projectString, "projects-main-container");
-    };
+function failureToExecute(){
+    console.log("Not Working!");
+};
+
+const startApplication = () => {
+    let myRequest = new XMLHttpRequest();
+    myRequest.addEventListener("load", loadprojects);
+    myRequest.addEventListener("error", failureToExecute);
+    myRequest.open("GET", "../json/projects.json");
+    myRequest.send();
 }
 
-linkProjects(projects);
+startApplication();
