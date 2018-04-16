@@ -29,6 +29,11 @@
             "id":"Functions within a Function",
             "date": "4/8/2018",
             "entry": "Cool method no doubt...Am I there yet? I'm gettingt there. This was easier than the previous project because I had a good team who spent hours talking over functions to get a beeter understanding. This Treehouse assignment made us work with json, objects in arrays, functions in functions, and mutiple XHR requests. To say the least it was challenging. WAlking through it with my group really helped me. I'm carefully working on my weaknesses. I thought it was functionality but it may be the hover button...SMH!!"
+        },
+        {
+            "id":"Browserify",
+            "date": "4/14/2018",
+            "entry": "So we are using grunt this week. Its both wonderful and annoying at the same time. I struggled where te particular functions and XHR request go. Overall once you get past that it a good additions. It makes the code easier to read and easier to find. I'm starting to llike it but Im sure this will change next week."
         }
     ]
 }
