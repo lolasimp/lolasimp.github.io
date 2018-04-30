@@ -34,6 +34,11 @@
             "id":"Browserify",
             "date": "4/14/2018",
             "entry": "So we are using grunt this week. Its both wonderful and annoying at the same time. I struggled where te particular functions and XHR request go. Overall once you get past that it a good additions. It makes the code easier to read and easier to find. I'm starting to llike it but Im sure this will change next week."
+        },
+        {
+            "id":"Task Runner",
+            "date": "4/25/2018",
+            "entry": "Just out here trying to get my javascript files in order. Its been challenging knowing where what goes where. After starting the group project I feel I got a sec to examine each file and know when to do what."
         }
     ]
 }
