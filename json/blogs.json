@@ -49,6 +49,16 @@
           "id": "jQuery",
           "date": "5/4/2018",
           "entry": "To make things easier month to month. Im on to 'THEM'! We learn vanilla and we go down the rabbit hole than to soften the blow they give us a beacon of light at the end of the tunnel. I'll take that light any day of the week. So far so good. Just learning where to add these buttons."
+        },
+        {
+          "id": "Promises",
+          "date": "5/24/2018",
+          "entry": "In learning promises you really have to have a true understanding te different ways Promise functions can be created. This does away with XHR calls, which are called in the seperated Promises. I had to do a bit more reasearching since I did not understand 100%. "
+        },
+        {
+          "id": "API",
+          "date": "5/29/2018",
+          "entry": "I have enjoyed the concept of the API! I't has added a  new layer for recieving information and created a more secure enviornment. "
         }
     ]
 }
