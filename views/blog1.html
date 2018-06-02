@@ -1,32 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/blog.css">
-    <title>Blog #1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/blog.css">
+    <title>Blogs</title>
 </head>
 <body>
-    <nav>
-            <ul class="page-links">
-                <li>
-                    <a href="project.html">Projects</a>
-                </li>
-                <li>
-                    <a href="professional.html">Resume</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="../index.html">Home</a>
-                    </li>
-            </ul>
-        </nav>
-        <div id="blog-main-container">
-  <!-- <h1>Starting the Journey</h1>
-   <p>My journey into coding truly began two weeks ago. I came in the classroom not knowing what to expect, but knowing that I plan to finish. So far github branches have been a pain in the YOU_KNOW_WHAT! I have no error with it on a normal occasion github. I must admit after doing the repo assignment I  really had no choice but to get the understanding(insert emoji of yellow girl and the shoulder shrug). Although this journey has just began I feel that I am learning the things needed to have a successful career. For those who dont know about github...Become a Developer and you shall find out. Just kidding, let me explain.</p>
-   <p>Github, starts with a understanding of Git, which is a open source version control where developers create i.e. apps by making several changes before releasing as an active app. The version control allows for storing updates. It makes public your code allowing other members to contribute to your work as well. Now that we know what github is let me share a few cool things you can do.</p> 
-   <p>At the start of each project you create a repository. This is also known as a repo and its where all files for your one project can be stored. This makes your work easily accessible for you and others if sharing. You also have the ability to contribute to other projects. You simply request to contribute and based off you repo the owner can allow you to make changes in their projects. It's also a smart way to connect with fellow developers. There is a follow feature that allows for additional communication. You are able to create a profile </p> -->
-</div>
-   <script src="../javascripts/blogs.js"></script>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+              aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">My Blogs</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a id="projectNav" href="project.html">Projects</a>
+                  </li>
+                  <li>
+                      <a id="resumeNav" href="professional.html">Resume</a>
+                  </li>
+                  <li>
+                      <a id="contactNav" href="contact.html">Contact</a>
+                  </li>
+                  <li>
+                      <a id="homeNav" href="../index.html">Home</a>
+                      </li>
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+    </div>
+    <div class="hide" id="projects">
+        <h1>Projects</h1>
+      </div>
+
+      <div class="hide" id="blogs">
+        <h1>Blogs</h1>
+       </div>
+       <div class="hide" id="resume">
+          <h1>Resume</h1>
+         </div>
+         <div class="hide" id="contact">
+            <h1>Contact</h1>
+           </div>
+
+        <div id="blog-main-container"></div>
+
+      </div>
+
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  <script src="../javascripts/blogs.js"></script>
+  <!-- <script src="./dist/app.js"></script> -->
 </body>
 </html>

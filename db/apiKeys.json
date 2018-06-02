@@ -1,0 +1,15 @@
+{
+  "apiKeys": {
+    "site": {
+      "apiKeys":""
+    },
+    "firebase": {
+        "apiKey": "AIzaSyBMu7RTbEEJgDipb68qP4yklEOECh-zjhQ",
+          "authDomain": "lola-personalsite.firebaseapp.com",
+          "databaseURL": "https://lola-personalsite.firebaseio.com",
+          "projectId": "lola-personalsite",
+          "storageBucket": "",
+          "messagingSenderId": "539602216027"
+    }
+   }
+  }

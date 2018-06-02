@@ -1,0 +1,15 @@
+{
+"apiKeys": {
+  "site": {
+    "apiKeys":""
+  },
+  "firebase": {
+      "apiKey": "",
+        "authDomain": "",
+        "databaseURL": "",
+        "projectId": "",
+        "storageBucket": "",
+        "messagingSenderId": ""
+  }
+ }
+}

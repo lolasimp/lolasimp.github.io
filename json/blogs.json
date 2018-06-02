@@ -59,6 +59,11 @@
           "id": "API",
           "date": "5/29/2018",
           "entry": "I have enjoyed the concept of the API! I't has added a  new layer for recieving information and created a more secure enviornment. "
+        },
+        {
+          "id": "Firebase",
+          "date": "6/2/2018",
+          "entry": "In learnig the process of firebase we are moving towardsnot having our jsons files locally. I found postman a bit dificult to understand at first when it came to knowing what information I need to to collect verses the information needed to leave out. Firebase really pull and secures all information in one spot. Its straight forward but making sure all calls are madewhere they are needed is something I am still working on."
         }
     ]
 }
