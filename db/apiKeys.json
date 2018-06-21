@@ -8,7 +8,7 @@
           "authDomain": "lola-personalsite.firebaseapp.com",
           "databaseURL": "https://lola-personalsite.firebaseio.com",
           "projectId": "lola-personalsite",
-          "storageBucket": "",
+          "storageBucket": "lola-personalsite.appspot.com",
           "messagingSenderId": "539602216027"
     }
    }

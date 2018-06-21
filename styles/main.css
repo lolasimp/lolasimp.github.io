@@ -20,7 +20,7 @@ background-image: url("IMG_1061.jpg");
 }
 
 h2 {
-    color: #7360d0bf; 
+    color: #7360d0bf;
 }
 
 .bio-image {
@@ -36,21 +36,21 @@ a:hover{
     background-color: yellow;
     text-transform: 5px;
 }
-ul {
+/* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     font-size: 18px;
-}
+} */
 
-li {
+/* li {
     float: right;
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
-}
+} */
 
 footer {
     font-size: 1.4rem;
