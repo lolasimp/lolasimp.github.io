@@ -38,12 +38,20 @@ const writeToDom = (input, divId) => {
 
 const makeBlogs = (blogsArray) => {
   let blogString = '';
-
+  blogString += `<div class="row mb-2">`;
   blogsArray.forEach((blog) => {
+    blogString +=  `<div class="col-md-6 ">`;
+    blogString +=   `<div class="card flex-md-row mb-4 boxshadow h-md-220">`;
+    blogString +=    `<div class="card-body d-flex flex-column align-items-start">`;
     blogString += `<h3 class="blog-title">${blog.title}</h3>`;
     blogString += `<h5>${blog.date}</h5>`;
     blogString += `<p>${blog.entry}</p>`;
+    blogString +=    `</div>`;
+    blogString +=   `</div>`;
+    blogString +=  `</div>`;
+
   });
+  blogString += `</div>`;
   writeToDom(blogString, 'blog-main-container');
 };
 
@@ -93,9 +101,16 @@ const projectsEvent = () => {
     });
 };
 
+// const blogsOpen = () => {
+//   $(document).on('click', '.titleBtn', ((e) => {
+//     const (e.target)
+//   })
+// };
+
 module.exports = {
   blogsEvent,
   projectsEvent,
+  // blogsOpen,
 };
 
 },{"./dom":2,"./firebaseApi":4}],4:[function(require,module,exports){

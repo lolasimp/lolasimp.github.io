@@ -21,7 +21,14 @@ const projectsEvent = () => {
     });
 };
 
+// const blogsOpen = () => {
+//   $(document).on('click', '.titleBtn', ((e) => {
+//     const (e.target)
+//   })
+// };
+
 module.exports = {
   blogsEvent,
   projectsEvent,
+  // blogsOpen,
 };
