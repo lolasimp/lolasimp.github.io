@@ -1,13 +1,37 @@
 .navbar {
-  background: none;
+  /* background-image: url("../img/naija2.jpeg"); */
+  background-repeat: no-repeat;
+  opacity: 0.5;
+    filter: alpha(opacity=50);
   border: none;
   mix-blend-mode: luminosity;
+
+}
+
+.sayHello {
+  background-image: url("../img/paint.jpeg");
+  /* opacity: 0.6;
+    filter: alpha(opacity=60); */
+  background-size: 100%;
+  background-attachment:fixed;
+  height: 400px;
+  margin-top: 178px;
+}
+
+.hi-font {
+  color: white;
+  margin-left: 520px;
+  padding-top: 164px;
+  font-size: 430%;
+  font-family: fantasy;
+  font-weight: 900;
 }
 
 #all {
   /* background-color: black; */
   background-image: url("../img/rope.jpg");
   background-repeat: no-repeat;
+  background-attachment:fixed;
   /* background-size: 100% 100%; */
   background-size: 106% 122%;
 }
@@ -16,6 +40,7 @@
     padding: 0;
     margin:0;
 }
+
 .home-header {
     width: 477px;
     padding-left: 307px;
@@ -76,14 +101,25 @@ footer {
 
 .about-container {
   /* background-color: #30125087; */
-  padding-bottom: 14%;
+  /* padding-bottom: 14%;
   width: 400px;
   height: 412px;
   margin-left: 515px;
   border-radius: 8px;
   border-radius: 8px;
-  margin-top: 171px;
+  margin-top: 171px; */
 
+
+      /* background-color: #30125087; */
+      padding-bottom: 76%;
+      width: 635px;
+      height: 210px;
+      margin-left: 391px;
+      border-radius: 8px;
+      border-radius: 8px;
+      margin-top: 409px;
+      border-color: red;
+      border: solid;
 }
 
 .info {
@@ -113,4 +149,35 @@ footer {
 .fa-twitter {
   background: #55ACEE;
   color: white;
+}
+
+
+/* blogs */
+
+#blog-main-container {
+  margin-left: 125px;
+  margin-top: 115px;
+}
+
+.card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  background-image: url("../img/Screen\ Shot\ 2018-06-28\ at\ 10.12.46\ PM.png");
+  color: black;
+  width: 500px;
+}
+/* ...................... */
+
+.card {
+  word-wrap: break-word;
+}
+
+.blogDate {
+  color: purple;
+}
+
+.blog-title {
+  background-color: white;
 }

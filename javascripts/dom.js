@@ -7,10 +7,12 @@ const makeBlogs = (blogsArray) => {
   blogString += `<div class="row mb-2">`;
   blogsArray.forEach((blog) => {
     blogString +=  `<div class="col-md-6 ">`;
+    blogString += `<div class="card-title-right flex-auto">`;
+    blogString += `<h3 class="blog-title">${blog.title}</h3>`;
+    blogString += `</div>`;
     blogString +=   `<div class="card flex-md-row mb-4 boxshadow h-md-220">`;
     blogString +=    `<div class="card-body d-flex flex-column align-items-start">`;
-    blogString += `<h3 class="blog-title">${blog.title}</h3>`;
-    blogString += `<h5>${blog.date}</h5>`;
+    blogString += `<h4 class="blogDate">${blog.date}</h4>`;
     blogString += `<p>${blog.entry}</p>`;
     blogString +=    `</div>`;
     blogString +=   `</div>`;
