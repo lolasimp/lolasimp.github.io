@@ -1,6 +1,15 @@
-body {
-  /* background-image: url("../img/berries.png") no-repeat center center fixed; */
-  background-color: red;
+.navbar {
+  background: none;
+  border: none;
+  mix-blend-mode: luminosity;
+}
+
+#all {
+  /* background-color: black; */
+  background-image: url("../img/rope.jpg");
+  background-repeat: no-repeat;
+  /* background-size: 100% 100%; */
+  background-size: 106% 122%;
 }
 
 * {
@@ -13,24 +22,34 @@ body {
     padding-top: 90px;
 }
 
-#name-title{
-    color: #7360d0bf;
+h3 {
+  color: #5abcf9;
+    font-family: fantasy;
+    font-size: 37px;
+    padding-bottom: 35px;
+    font-weight: bolder;
 }
 
 h2 {
-    color: #7360d0bf;
+  color: #04020c;
+  font-family: fantasy;
+  font-size: 52px;
 }
 
 .bio-image {
-    width: 255px;
-    border-radius: 90%;
+  width: 214px;
+  border-radius: 90%;
+  margin-top: 73px;
+  border:10px solid white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
 }
-.intro {
-    font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
-    float: right;
-    flex-direction: row;
+h4 {
+    font-size: 18px;
+    font-family: sans-serif;
+    color:white;
+
 }
 
 footer {
@@ -38,16 +57,60 @@ footer {
     margin-bottom: 8px;
     padding-top: 800px;
     float: right;
+    color: black;
 }
-
+#copyright {
+  color: black;
+}
 /* Projects Styling */
 
 .project-photo {
   margin-top: -67px;
   margin-bottom: 84px;
-  float: left;
+  /* float: left; */
   margin-left: -468px;
   height: 426px;
   width: 421px;
   padding-bottom: 127px;
+}
+
+.about-container {
+  /* background-color: #30125087; */
+  padding-bottom: 14%;
+  width: 400px;
+  height: 412px;
+  margin-left: 515px;
+  border-radius: 8px;
+  border-radius: 8px;
+  margin-top: 171px;
+
+}
+
+.info {
+  height: 250px;
+  width: 320px;
+  padding-top: 22px;
+  padding: 22px;
+}
+
+.social-media {
+  width: 32%;
+  height: 131px;
+  border: solid;
+  border-color: red;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
