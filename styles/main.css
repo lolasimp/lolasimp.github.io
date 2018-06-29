@@ -1,59 +1,183 @@
+.navbar {
+  /* background-image: url("../img/naija2.jpeg"); */
+  background-repeat: no-repeat;
+  opacity: 0.5;
+    filter: alpha(opacity=50);
+  border: none;
+  mix-blend-mode: luminosity;
+
+}
+
+.sayHello {
+  background-image: url("../img/paint.jpeg");
+  /* opacity: 0.6;
+    filter: alpha(opacity=60); */
+  background-size: 100%;
+  background-attachment:fixed;
+  height: 400px;
+  margin-top: 178px;
+}
+
+.hi-font {
+  color: white;
+  margin-left: 520px;
+  padding-top: 164px;
+  font-size: 430%;
+  font-family: fantasy;
+  font-weight: 900;
+}
+
+#all {
+  /* background-color: black; */
+  background-image: url("../img/rope.jpg");
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  /* background-size: 100% 100%; */
+  background-size: 106% 122%;
+}
 
 * {
     padding: 0;
     margin:0;
 }
-header {
+
+.home-header {
     width: 477px;
     padding-left: 307px;
     padding-top: 90px;
 }
 
-body{
-background-image: url("IMG_1061.jpg");
-}
-
-
-
-#name-title{
-    color: #7360d0bf;
+h3 {
+  color: #5abcf9;
+    font-family: fantasy;
+    font-size: 37px;
+    padding-bottom: 35px;
+    font-weight: bolder;
 }
 
 h2 {
-    color: #7360d0bf;
+  color: #04020c;
+  font-family: fantasy;
+  font-size: 52px;
 }
 
 .bio-image {
-    width: 255px;
-    border-radius: 90%;
+  width: 214px;
+  border-radius: 90%;
+  margin-top: 73px;
+  border:10px solid white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
 }
-div {
-    font-size: 17px;
-    color: white;
-}
-a:hover{
-    color: blue;
-    background-color: yellow;
-    text-transform: 5px;
-}
-/* ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+h4 {
     font-size: 18px;
-} */
+    font-family: sans-serif;
+    color:white;
 
-/* li {
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-} */
+}
 
 footer {
     font-size: 1.4rem;
     margin-bottom: 8px;
     padding-top: 800px;
+    float: right;
+    color: black;
+}
+#copyright {
+  color: black;
+}
+/* Projects Styling */
+
+.project-photo {
+  margin-top: -67px;
+  margin-bottom: 84px;
+  /* float: left; */
+  margin-left: -468px;
+  height: 426px;
+  width: 421px;
+  padding-bottom: 127px;
+}
+
+.about-container {
+  /* background-color: #30125087; */
+  /* padding-bottom: 14%;
+  width: 400px;
+  height: 412px;
+  margin-left: 515px;
+  border-radius: 8px;
+  border-radius: 8px;
+  margin-top: 171px; */
+
+
+      /* background-color: #30125087; */
+      padding-bottom: 76%;
+      width: 635px;
+      height: 210px;
+      margin-left: 391px;
+      border-radius: 8px;
+      border-radius: 8px;
+      margin-top: 409px;
+      border-color: red;
+      border: solid;
+}
+
+.info {
+  height: 250px;
+  width: 320px;
+  padding-top: 22px;
+  padding: 22px;
+}
+
+.social-media {
+  width: 32%;
+  height: 131px;
+  border: solid;
+  border-color: red;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+/* blogs */
+
+#blog-main-container {
+  margin-left: 125px;
+  margin-top: 115px;
+}
+
+.card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  background-image: url("../img/Screen\ Shot\ 2018-06-28\ at\ 10.12.46\ PM.png");
+  color: black;
+  width: 500px;
+}
+/* ...................... */
+
+.card {
+  word-wrap: break-word;
+}
+
+.blogDate {
+  color: purple;
+}
+
+.blog-title {
+  background-color: white;
 }
