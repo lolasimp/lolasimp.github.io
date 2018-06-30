@@ -1,16 +1,23 @@
-# HTML and CSS
+# Lola Simpson's Site
 
 ## Description
-Personal site which includes: weekly blogs, projects, contact information, and resume. 
+My personal developer site.
 
-## Screenshots
-![Webpage]
+<img src="./img/home.png">
+<img src ="./img/aboutme.png">
+
 
 ## How to Run
-1. Clone down this repo, and cd into the project
-1. Install the http-server plugin via npm
-1. In your terminal ```hs -p 9999```
-1. In your browser navigation to: localhost:9999
+- https://lola-personalsite.firebaseapp.com
+
+## Technologies Used
+- html
+- Browserify
+- css
+- Grunt
+- Promises
+- Firebase
+
 
 ## Contributors
 [Lola Simpson](https://github.com/lolasimp)
