@@ -1,21 +1,19 @@
 .navbar {
-  /* background-image: url("../img/naija2.jpeg"); */
   background-repeat: no-repeat;
   opacity: 0.5;
-    filter: alpha(opacity=50);
+  filter: alpha(opacity=50);
   border: none;
   mix-blend-mode: luminosity;
 
 }
 
 .sayHello {
-  background-image: url("../img/paint.jpeg");
-  /* opacity: 0.6;
-    filter: alpha(opacity=60); */
+  background-image: url("../img/rope.jpg");
   background-size: 100%;
   background-attachment:fixed;
   height: 400px;
-  margin-top: 178px;
+  margin-top: 127px;
+  margin-bottom: 148px;
 }
 
 .hi-font {
@@ -28,31 +26,29 @@
 }
 
 #all {
-  /* background-color: black; */
-  background-image: url("../img/rope.jpg");
+  background-image: url("../img/IMG_2306.JPG");
   background-repeat: no-repeat;
   background-attachment:fixed;
-  /* background-size: 100% 100%; */
   background-size: 106% 122%;
 }
 
 * {
-    padding: 0;
-    margin:0;
+  padding: 0;
+  margin:0;
 }
 
 .home-header {
-    width: 477px;
-    padding-left: 307px;
-    padding-top: 90px;
+  width: 477px;
+  padding-left: 307px;
+  padding-top: 90px;
 }
 
 h3 {
   color: #5abcf9;
-    font-family: fantasy;
-    font-size: 37px;
-    padding-bottom: 35px;
-    font-weight: bolder;
+  font-family: fantasy;
+  font-size: 37px;
+  padding-bottom: 35px;
+  font-weight: bolder;
 }
 
 h2 {
@@ -64,23 +60,25 @@ h2 {
 .bio-image {
   width: 214px;
   border-radius: 90%;
-  margin-top: 73px;
+  margin-top: 35px;
+  margin-bottom: 31px;
+  opacity: 1.0;
   border:10px solid white;
     border-radius: 500px;
     -webkit-border-radius: 500px;
     -moz-border-radius: 500px;
 }
 h4 {
-    font-size: 18px;
-    font-family: sans-serif;
-    color:white;
+  font-size: 20px;
+  font-family: fantasy;
+  font-weight: 900;
+  color:white;
 
 }
 
 footer {
     font-size: 1.4rem;
     margin-bottom: 8px;
-    padding-top: 800px;
     float: right;
     color: black;
 }
@@ -92,7 +90,6 @@ footer {
 .project-photo {
   margin-top: -67px;
   margin-bottom: 84px;
-  /* float: left; */
   margin-left: -468px;
   height: 426px;
   width: 421px;
@@ -100,26 +97,15 @@ footer {
 }
 
 .about-container {
-  /* background-color: #30125087; */
-  /* padding-bottom: 14%;
-  width: 400px;
-  height: 412px;
-  margin-left: 515px;
+  background-image: url("../img/rope.jpg");
+  background-size: 100%;
+  /* background-color: #25222569; */
+  padding-bottom: 41%;
+  width: 685px;
+  height: 153px;
+  margin-left: 379px;
   border-radius: 8px;
-  border-radius: 8px;
-  margin-top: 171px; */
-
-
-      /* background-color: #30125087; */
-      padding-bottom: 76%;
-      width: 635px;
-      height: 210px;
-      margin-left: 391px;
-      border-radius: 8px;
-      border-radius: 8px;
-      margin-top: 409px;
-      border-color: red;
-      border: solid;
+  margin-top: -3px;
 }
 
 .info {
@@ -127,13 +113,6 @@ footer {
   width: 320px;
   padding-top: 22px;
   padding: 22px;
-}
-
-.social-media {
-  width: 32%;
-  height: 131px;
-  border: solid;
-  border-color: red;
 }
 
 .fa {
@@ -181,3 +160,102 @@ footer {
 .blog-title {
   background-color: white;
 }
+
+p {
+  margin: 0 0 10px;
+  color: white;
+  background-color: #318fbd;
+  font-weight: 900;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+/* carousel */
+.container {
+  margin-bottom: 123px;
+  margin-top: -201px;
+}
+
+.project-font{
+  color: white;
+  margin-left: 458px;
+  padding-bottom: 99px;
+  font-size: 430%;
+  font-family: fantasy;
+  font-weight: 900;
+  padding-top: 243px;
+}
+
+.carousel-inner p{
+  background-color: white;
+  background-repeat: no-repeat;
+  color: black;
+  width: 310px;
+  height: 110px;
+  border-radius: 8px;
+  margin-left: 200px;
+  padding-top: 5px;
+}
+
+.contact-section {
+  margin-left: -407px;
+  height: 393px;
+  margin-top: 178px;
+  width: 1500px;
+}
+
+.contactMe {
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 3.2em;
+  font-family: fantasy;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.border-line {
+  width: 100%;
+  height: 4px;
+  background-color:purple;
+}
+
+.social-links ul{
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.social-links li {
+  display: inline;
+  margin: 10px;
+}
+
+.button {
+  vertical-align: middle;
+  height: 75px;
+}
+
+/* Professional */
+
+.professional-container{
+text-align: center;
+    background: #cbc9d3cc;
+    width: 800px;
+    height: 721px;
+    padding: 31px;
+    margin-left: 249px;
+    margin-top: 85px;
+  }
+
+  .job-title {
+    font-size: 23px;
+  }
+
+  article {
+    padding-top: 46px;
+  }
+
+  .front-end {
+    padding-left: 542px;
+  }
