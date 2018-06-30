@@ -69,6 +69,11 @@
       "title": "Auth and CRUD",
       "date": "6/18/2018",
       "entry": "I will forever do authentication first. It's not that its extremely hard its just that most of the information moves around after this information is included. CRUD on the other hand...I understand it but sometimes it just doesnt like me in the same regards. I understand the concept of saving information but for some reason it wants to save how it want to save."
+    },
+    "blog15": {
+      "title": "SASS",
+      "date": "6/27/2018",
+      "entry": "So we learned SASS tonight. I'm not the biggest fan but it is nice for large projects. Its helps with organization for sure. I may however stick with CSS and Bootstrap."
     }
   }
 }
