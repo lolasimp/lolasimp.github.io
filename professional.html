@@ -1,53 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <link rel="stylesheet" href="/prof.css">
-    <title>Lola's Professional History</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.css ">
+    <title>About Me</title>
 </head>
-<body>
+<body id="all">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+              aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Lola Simpson</a>
+          </div>
 
-        <div class="main-container">
-                <nav>
-                    <ul class="heading">
-                        <li>
-                            <a href="blogs.html">Blogs</a>
-                        </li>
-                        <li>
-                            <a href="projects.html">Projects</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                        <li>
-                                <a href="index.html">Home</a>
-                        </li>
-                    </ul>
-                </nav>
-    <h1>Professional History</h1>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="./index.html">About Me</a>
+                </li>
+                  <li>
+                      <a id="projectNav" href="./blogs.html">Blogs</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+
+
+
+      <div class="professional-container">
+    <h1 class="prof">Professional History</h1>
     <article>
         <ul>
             <li>
         <h3 class="jobs"><a href="https://www.evicore.com/">Evicore Health Care</a> June 2011 to Present</h3>
         <section>
-            <p><strong>Network Operations as a Specialist.</strong><br>Handle all contractual aggreements by verifying and updates or changes.<br>Coordinate any updates needed for each contracted provider.<br>Create workflows on new processes.<br>Train new hires on programs needed for their positions.</p>
+            <h2 class="job-title"><strong>Network Operations as a Specialist.</strong><br>Handle all contractual aggreements by verifying and updates or changes.<br>Coordinate any updates needed for each contracted provider.<br>Create workflows on new processes.<br>Train new hires on programs needed for their positions.</h2>
         </section>
     </li>
     </article>
     <article>
        <li>
-           <h3>Liquid Crystal Productions: 2006 to 2012</h3>
+          <h3 class="jobs"><a href="http://www.liquidcrystalproductions.com/">Liquid Crystal Productions</a> 2006 to 2012</h3>
         <section>
-            <p><strong>Producer</strong><br>Find production opportunities for team to direct and produce.<br>Find production staff in order to create commercial, movie, etc.<br>Organize shotlists, talent, image cards, etc.</p>
+            <h2 class="job-title"><strong>Producer</strong><br>Find production opportunities for team to direct and produce.<br>Find production staff in order to create commercial, movie, etc.<br>Organize shotlists, talent, image cards, etc.</h2>
         </section>
        </li>
     </article>
 </ul>
-    <footer>
-         <h5 id="copyright" class="nav-left-copyright">&copy;2018 Lola Simpson</h5>
-     </footer>
-</body>
+
+<footer class="clearfix">
+    <h4 id="copyright" class="nav-left-copyright">&copy;2018 Lola Simpson</h4>
+</footer>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-        <script src="dist/app.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script src="dist/app.js"></script>
+</body>
 </html>
