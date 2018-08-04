@@ -1,5 +1,5 @@
 const {setConfig,} = require('./firebaseApi');
-const {blogsEvent, projectsEvent,} = require('./events');
+const {blogsEvent,} = require('./events');
 
 const apiKeys = () => {
   return new Promise((resolve, reject) => {
@@ -19,7 +19,7 @@ const retrieveKeys = () => {
       firebase.initializeApp(results.firebase);
       setConfig(results.firebase);
       blogsEvent();
-      projectsEvent();
+      // projectsEvent();
     })
     .catch((error) => {
       console.error(error);

@@ -8,7 +8,7 @@
     "blog02": {
       "title": "Eyes Wide Open...",
       "date": "3/5/2018",
-      "entry": "Let's just say JavaScrpit got REAL this week. I have a Love/Hate relationship with it currently. We learn one thing thinking life is good until we get the daily challenges and life throws us handgrenades. This is how it's been this week. I was told this would happen so Im not completely shedding tears. Now, that Im done with the emotions lets get to the meat of it all. I absolutely struggled with Arrays. I understand the concept but once the for loop comes into play I felt like a IDIOT! I honestly had no clue how to take what I know to be true and make sense and place in a for loop. I was fortunate enough to have the time to sit down with an instructor and talk it out. Im hoping to gain a better understanding in the next few days by doing more challenges. All is Well!!"
+      "entry": "Let's just say JavaScript got REAL this week. I have a Love/Hate relationship with it currently. We learn one thing thinking life is good until we get the daily challenges and life throws us hand grenades. This is how it's been this week. I was told this would happen so Im not completely shedding tears. Now, that Im done with the emotions lets get to the meat of it all. I absolutely struggled with Arrays. I understand the concept but once the for loop comes into play I felt like a IDIOT! I honestly had no clue how to take what I know to be true and make sense and place in a for loop. I was fortunate enough to have the time to sit down with an instructor and talk it out. Im hoping to gain a better understanding in the next few days by doing more challenges. All is Well!!"
     },
     "blog03": {
       "title": "It's Getting Interesting!",
@@ -18,22 +18,22 @@
     "blog04": {
       "title": "Moving from VAR to LET and CONST",
       "date": "3/27/2018",
-      "entry": "I definitely hate the feeling of uncertainty. When introduced at first glance you wonder why we didnt learn this way in the beginning. I do understand why we learn 'Vanilla' JavaScript, but it still sucks. Anywho, I can grasps the meaning when creating a for loop but I still don't grasp all the elements needed toadd in the for loop to produce the answer I want. I'm working on this concept one day at a time. Once I discover I need to add a 'forEach' or a 'join()/split()' I feel like I just need to learn more rules for things to work in the ways the should. In our last group project I chose to work on the page needing loops because I wanted to better my understanding. I feel like Im taking the neccessary steps needed to better my understanding but sometimes I feel lost."
+      "entry": "I definitely hate the feeling of uncertainty. When introduced at first glance you wonder why we didn't learn this way in the beginning. I do understand why we learn 'Vanilla' JavaScript, but it still sucks. Any who, I can grasps the meaning when creating a for loop but I still don't grasp all the elements needed to add in the for loop to produce the answer I want. I'm working on this concept one day at a time. Once I discover I need to add a 'forEach' or a 'join()/split()' I feel like I just need to learn more rules for things to work in the ways the should. In our last group project I chose to work on the page needing loops because I wanted to better my understanding. I feel like Im taking the necessary steps needed to better my understanding but sometimes I feel lost."
     },
     "blog05": {
       "title": "New Found Appreciation",
       "date": "4/4/2018",
-      "entry": "This week we learned about the JSON. I feel the more we learn the more compact the inforation gets...BUT the functions grow. More to write equats to more functionality learned. I struggled deeply with the hover event listener this week. I'm still working on but there is hope now that I have a full scope of what Im looking for. There has definitely been some challenges this week. Working full time and school is hard, yet rewarding. I just keep looking towards the end. I dont know what the future holds but I do know i'll be coding to the end."
+      "entry": "This week we learned about the JSON. I feel the more we learn the more compact the information gets...BUT the functions grow. More to write equates to more functionality learned. I struggled deeply with the hover event listener this week. I'm still working on but there is hope now that I have a full scope of what Im looking for. There has definitely been some challenges this week. Working full time and school is hard, yet rewarding. I just keep looking towards the end. I dont know what the future holds but I do know i'll be coding to the end."
     },
     "blog06": {
       "title": "Functions within a Function",
       "date": "4/8/2018",
-      "entry": "Cool method no doubt...Am I there yet? I'm gettingt there. This was easier than the previous project because I had a good team who spent hours talking over functions to get a beeter understanding. This Treehouse assignment made us work with json, objects in arrays, functions in functions, and mutiple XHR requests. To say the least it was challenging. WAlking through it with my group really helped me. I'm carefully working on my weaknesses. I thought it was functionality but it may be the hover button...SMH!!"
+      "entry": "Cool method no doubt...Am I there yet? I'm getting there. This was easier than the previous project because I had a good team who spent hours talking over functions to get a better understanding. This Tree house assignment made us work with json, objects in arrays, functions in functions, and multiple XHR requests. To say the least it was challenging. Walking through it with my group really helped me. I'm carefully working on my weaknesses. I thought it was functionality but it may be the hover button...SMH!!"
     },
     "blog07": {
       "title": "Browserify",
       "date": "4/14/2018",
-      "entry": "So we are using grunt this week. Its both wonderful and annoying at the same time. I struggled where te particular functions and XHR request go. Overall once you get past that it a good additions. It makes the code easier to read and easier to find. I'm starting to llike it but Im sure this will change next week."
+      "entry": "So we are using grunt this week. Its both wonderful and annoying at the same time. I struggled where te particular functions and XHR request go. Overall once you get past that it a good additions. It makes the code easier to read and easier to find. I'm starting to like it but Im sure this will change next week."
     },
     "blog08": {
       "title": "Task Runner",
@@ -43,7 +43,7 @@
     "blog09": {
       "title": "Chatty-Gen",
       "date": "4/30/2018",
-      "entry": "Per this group we are working with individuals who are of the same skill level. This was very interesting. I felt we worked well together. I also felt it gave me a chance to ask questions and get a better understanding. In class we have many that will ask confusing questions that go ahead of the lessons we are currently learning. Some questions cause confusion if the individual doesn't know what to ask in the first place. I learned patience in this group. I found out that I'm use to the corporate world. In the corporate world they tell you to do someting and you just find the answer regardless to what you know. I'm not familar with waiting for someone to catch up. My mentality since working in a corporate setting is you listen once take as many notes as possible and get it done. If you do need help you can definitely ask but for the most part there is no 'Hand Holding'."
+      "entry": "Per this group we are working with individuals who are of the same skill level. This was very interesting. I felt we worked well together. I also felt it gave me a chance to ask questions and get a better understanding. In class we have many that will ask confusing questions that go ahead of the lessons we are currently learning. Some questions cause confusion if the individual doesn't know what to ask in the first place. I learned patience in this group. I found out that I'm use to the corporate world. In the corporate world they tell you to do something and you just find the answer regardless to what you know. I'm not familiar with waiting for someone to catch up. My mentality since working in a corporate setting is you listen once take as many notes as possible and get it done. If you do need help you can definitely ask but for the most part there is no 'Hand Holding'."
     },
     "blog10": {
       "title": "jQuery",
@@ -53,17 +53,17 @@
     "blog11": {
       "title": "Promises",
       "date": "5/24/2018",
-      "entry": "In learning promises you really have to have a true understanding te different ways Promise functions can be created. This does away with XHR calls, which are called in the seperated Promises. I had to do a bit more reasearching since I did not understand 100%. "
+      "entry": "In learning promises you really have to have a true understanding te different ways Promise functions can be created. This does away with XHR calls, which are called in the separated Promises. I had to do a bit more researching since I did not understand 100%. "
     },
     "blog12": {
       "title": "API",
       "date": "5/29/2018",
-      "entry": "I have enjoyed the concept of the API! I't has added a  new layer for recieving information and created a more secure enviornment. "
+      "entry": "I have enjoyed the concept of the API! I't has added a  new layer for receiving information and created a more secure environment. "
     },
     "blog13": {
       "title": "Firebase",
       "date": "6/2/2018",
-      "entry": "In learnig the process of firebase we are moving towardsnot having our jsons files locally. I found postman a bit dificult to understand at first when it came to knowing what information I need to to collect verses the information needed to leave out. Firebase really pull and secures all information in one spot. Its straight forward but making sure all calls are madewhere they are needed is something I am still working on."
+      "entry": "In learning the process of firebase we are moving to NOT having our json files locally. I found postman a bit difficult to understand at first when it came to knowing what information I need to to collect verses the information needed to leave out. Firebase really pull and secures all information in one spot. Its straight forward but making sure all calls are made where they are needed is something I am still working on."
     },
     "blog14": {
       "title": "Auth and CRUD",

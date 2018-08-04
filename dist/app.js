@@ -1,6 +1,6 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 const {setConfig,} = require('./firebaseApi');
-const {blogsEvent, projectsEvent,} = require('./events');
+const {blogsEvent,} = require('./events');
 
 const apiKeys = () => {
   return new Promise((resolve, reject) => {
@@ -20,7 +20,7 @@ const retrieveKeys = () => {
       firebase.initializeApp(results.firebase);
       setConfig(results.firebase);
       blogsEvent();
-      projectsEvent();
+      // projectsEvent();
     })
     .catch((error) => {
       console.error(error);
@@ -57,31 +57,31 @@ const makeBlogs = (blogsArray) => {
   writeToDom(blogString, 'blog-main-container');
 };
 
-const makeProjects = (projectsArray) => {
-  let projectString = '';
-  projectString += `<div class="container-fluid">`;
-  projectString +=  `<div class="row thumbnail">`;
-  projectsArray.forEach((project) => {
-    projectString += `<div class="col-md-5 col-md-offset-3 project">`;
-    projectString += `<h5 class="project-date">${project.dates}</h5>`;
-    projectString +=  `<h2 class="project-title">${project.title}</h2>`;
-    projectString +=  `<img class="project-photo" src="${project.photo}" alt="Project photo">`;
-    projectString +=  `<h4 class="description">${project.info}</h4>`;
-    projectString += `</div>`;
-  });
-  projectString +=  `</div>`;
-  projectString += `</div>`;
-  writeToDom(projectString, 'projects-main-container');
-};
+// const makeProjects = (projectsArray) => {
+//   let projectString = '';
+//   projectString += `<div class="container-fluid">`;
+//   projectString +=  `<div class="row thumbnail">`;
+//   projectsArray.forEach((project) => {
+//     projectString += `<div class="col-md-5 col-md-offset-3 project">`;
+//     projectString += `<h5 class="project-date">${project.dates}</h5>`;
+//     projectString +=  `<h2 class="project-title">${project.title}</h2>`;
+//     projectString +=  `<img class="project-photo" src="${project.photo}" alt="Project photo">`;
+//     projectString +=  `<h4 class="description">${project.info}</h4>`;
+//     projectString += `</div>`;
+//   });
+//   projectString +=  `</div>`;
+//   projectString += `</div>`;
+//   writeToDom(projectString, 'projects-main-container');
+// };
 
 module.exports = {
   makeBlogs,
-  makeProjects,
+  // makeProjects,
 };
 
 },{}],3:[function(require,module,exports){
-const {getAllBlogs, getAllProjects,} = require('./firebaseApi');
-const {makeBlogs, makeProjects,} = require('./dom');
+const {getAllBlogs,} = require('./firebaseApi');
+const {makeBlogs,} = require('./dom');
 
 const blogsEvent = () => {
   getAllBlogs()
@@ -93,15 +93,15 @@ const blogsEvent = () => {
     });
 };
 
-const projectsEvent = () => {
-  getAllProjects()
-    .then((results) => {
-      makeProjects(results);
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-};
+// const projectsEvent = () => {
+//   getAllProjects()
+//     .then((results) => {
+//       makeProjects(results);
+//     })
+//     .catch((error) => {
+//       console.error(error);
+//     });
+// };
 
 // const blogsOpen = () => {
 //   $(document).on('click', '.titleBtn', ((e) => {
@@ -111,7 +111,7 @@ const projectsEvent = () => {
 
 module.exports = {
   blogsEvent,
-  projectsEvent,
+  // projectsEvent,
   // blogsOpen,
 };
 
@@ -127,7 +127,7 @@ const getAllBlogs = () => {
     const blogsArray = [];
     $.ajax({
       method: 'GET',
-      url: `${firebaseConfig.databaseURL}/blogs.json`,
+      url: `${firebaseConfig.databaseURL}/blogs/blogs.json`,
     })
       .done((allBlogsObj) => {
         if (allBlogsObj !== null) {
@@ -144,32 +144,32 @@ const getAllBlogs = () => {
   });
 };
 
-const getAllProjects = () => {
-  return new Promise((resolve, reject) => {
-    const projectsArray = [];
-    $.ajax({
-      method: 'GET',
-      url: `${firebaseConfig.databaseURL}/projects/projects.json`,
-    })
-      .done((allProjectsObj) => {
-        if (allProjectsObj !== null) {
-          Object.keys(allProjectsObj).forEach((fbKey) => {
-            allProjectsObj[fbKey].id = fbKey;
-            projectsArray.push(allProjectsObj[fbKey]);
-          });
-        }
-        resolve(projectsArray);
-      })
-      .fail((error) => {
-        reject(error);
-      });
-  });
-};
+// const getAllProjects = () => {
+//   return new Promise((resolve, reject) => {
+//     const projectsArray = [];
+//     $.ajax({
+//       method: 'GET',
+//       url: `${firebaseConfig.databaseURL}/projects/projects.json`,
+//     })
+//       .done((allProjectsObj) => {
+//         if (allProjectsObj !== null) {
+//           Object.keys(allProjectsObj).forEach((fbKey) => {
+//             allProjectsObj[fbKey].id = fbKey;
+//             projectsArray.push(allProjectsObj[fbKey]);
+//           });
+//         }
+//         resolve(projectsArray);
+//       })
+//       .fail((error) => {
+//         reject(error);
+//       });
+//   });
+// };
 
 module.exports = {
   setConfig,
   getAllBlogs,
-  getAllProjects,
+  // getAllProjects,
 };
 
 },{}],5:[function(require,module,exports){
