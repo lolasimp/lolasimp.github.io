@@ -26,30 +26,30 @@ const getAllBlogs = () => {
   });
 };
 
-// const getAllProjects = () => {
-//   return new Promise((resolve, reject) => {
-//     const projectsArray = [];
-//     $.ajax({
-//       method: 'GET',
-//       url: `${firebaseConfig.databaseURL}/projects/projects.json`,
-//     })
-//       .done((allProjectsObj) => {
-//         if (allProjectsObj !== null) {
-//           Object.keys(allProjectsObj).forEach((fbKey) => {
-//             allProjectsObj[fbKey].id = fbKey;
-//             projectsArray.push(allProjectsObj[fbKey]);
-//           });
-//         }
-//         resolve(projectsArray);
-//       })
-//       .fail((error) => {
-//         reject(error);
-//       });
-//   });
-// };
+const getAllProjects = () => {
+  return new Promise((resolve, reject) => {
+    const projectsArray = [];
+    $.ajax({
+      method: 'GET',
+      url: `${firebaseConfig.databaseURL}/projects/projects.json`,
+    })
+      .done((allProjectsObj) => {
+        if (allProjectsObj !== null) {
+          Object.keys(allProjectsObj).forEach((fbKey) => {
+            allProjectsObj[fbKey].id = fbKey;
+            projectsArray.push(allProjectsObj[fbKey]);
+          });
+        }
+        resolve(projectsArray);
+      })
+      .fail((error) => {
+        reject(error);
+      });
+  });
+};
 
 module.exports = {
   setConfig,
   getAllBlogs,
-  // getAllProjects,
+  getAllProjects,
 };
