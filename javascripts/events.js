@@ -1,5 +1,5 @@
-const {getAllBlogs,getAllProjects} = require('./firebaseApi');
-const {makeBlogs, makeProjects} = require('./dom');
+const {getAllBlogs, getAllProjects,} = require('./firebaseApi');
+const {makeBlogs, makeProjects,} = require('./dom');
 
 const blogsEvent = () => {
   getAllBlogs()

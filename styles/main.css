@@ -7,13 +7,18 @@
 
 }
 
+.spacing{
+  padding: 180px;
+}
+
 .sayHello {
-  background-image: url("../img/rope.jpg");
+  /* background-image: url("../img/rope.jpg"); */
+  background-color: black;
   background-size: 100%;
   background-attachment:fixed;
   height: 400px;
   margin-top: 127px;
-  margin-bottom: 148px;
+  margin-bottom: 200px;
 }
 
 .hi-font {
@@ -52,7 +57,7 @@ h3 {
 }
 
 h2 {
-  color: #04020c;
+  color:white;
   font-family: fantasy;
   font-size: 52px;
 }
@@ -97,15 +102,16 @@ footer {
 }
 
 .about-container {
-  background-image: url("../img/rope.jpg");
+  /* background-image: url("../img/rope.jpg"); */
+  background-color: black;
   background-size: 100%;
-  /* background-color: #25222569; */
   padding-bottom: 41%;
   width: 685px;
   height: 153px;
   margin-left: 379px;
   border-radius: 8px;
   margin-top: -3px;
+  margin-bottom: 148px;
 }
 
 .info {
@@ -134,7 +140,6 @@ footer {
 /* blogs */
 
 #blog-main-container {
-  margin-left: 125px;
   margin-top: 115px;
 }
 
@@ -197,21 +202,42 @@ p {
   padding-top: 5px;
 }
 
-.contact-section {
-  margin-left: -407px;
-  height: 393px;
-  margin-top: 178px;
-  width: 1500px;
+
+.tech-components {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
-.contactMe {
-  margin: 0;
-  padding-top: 50px;
-  padding-bottom: 20px;
-  font-size: 3.2em;
+.tech-container{
+  background-color: #490d6199;
+  margin-top: 87px;
+  padding: 53px;
+}
+
+.tech-name{
+  padding: 31px;
+  padding-bottom: 104px;
+}
+
+.tech-img {
+  height: 150px;
+  position: relative;
+}
+
+.tech-image {
+  max-width: 90%;
+  max-height: 50%;
+  margin-right: 35px;
+  margin-left: 43px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.email{
   font-family: fantasy;
-  letter-spacing: 1px;
-  font-weight: 800;
+  color: white;
 }
 
 .border-line {
@@ -239,13 +265,14 @@ p {
 /* Professional */
 
 .professional-container{
-text-align: center;
-    background: #cbc9d3cc;
-    width: 800px;
-    height: 721px;
-    padding: 31px;
-    margin-left: 249px;
-    margin-top: 85px;
+  text-align: center;
+  background: #cbc9d3cc;
+  width: 800px;
+  height: 700px;
+  /* padding-bottom: 89px; */
+  padding: 31px;
+  margin-left: 249px;
+  margin-top: 85px;
   }
 
   .job-title {

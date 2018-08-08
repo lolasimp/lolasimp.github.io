@@ -80,8 +80,8 @@ module.exports = {
 };
 
 },{}],3:[function(require,module,exports){
-const {getAllBlogs,getAllProjects} = require('./firebaseApi');
-const {makeBlogs, makeProjects} = require('./dom');
+const {getAllBlogs, getAllProjects,} = require('./firebaseApi');
+const {makeBlogs, makeProjects,} = require('./dom');
 
 const blogsEvent = () => {
   getAllBlogs()
